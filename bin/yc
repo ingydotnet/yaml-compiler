@@ -1,0 +1,7 @@
+#!/usr/bin/env coffee
+
+require '../lib/yaml/compiler'
+
+args = process.argv.slice 2, process.argv.length
+
+(new YamlCompiler).run args

@@ -1,0 +1,6 @@
+---
+- <<: map.yaml
+  x: 123
+- - first
+  - <`jq list.json`
+  - last

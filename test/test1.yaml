@@ -1,0 +1,4 @@
+foo:
+  <: foo.yaml
+  bar: 56
+bar: < foo.yaml
