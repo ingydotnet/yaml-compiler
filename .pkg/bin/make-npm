@@ -39,6 +39,7 @@ for swim in $(find doc -type f -name '*.swim'); do
     (
       set -x
       swim --to=md --complete --wrap "$swim" > "$md"
+      swim --to=md --complete --wrap "$swim" > npm/ReadMe.md
     )
   else
     (

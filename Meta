@@ -1,7 +1,7 @@
 =meta: 0.0.2
 
 name: yaml-compiler
-version: 0.0.2
+version: 0.0.3
 abstract: Compile Multiple YAML Files into One
 homepage: http://yaml.org
 tag: [yaml, compiler]
@@ -26,11 +26,6 @@ devel:
   description: Compile Multiple YAML Files into One
   bin:
     yc: bin/yc
-  files:
-  - bin
-  - doc
-  - lib
-  - test
   engines:
     node: '>=0.4.0'
   dependencies:
@@ -43,4 +38,4 @@ devel:
     test: coffee -e '(require "./test/lib/Test/Harness").run()' test
   repository:
     type: git
-    url: git+https://github.com/ingydotnet/yaml-compiler.git
+    url: https://github.com/ingydotnet/yaml-compiler
