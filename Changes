@@ -1,4 +1,19 @@
 ---
+version: 0.0.5
+date:    Wed Apr 13 14:18:09 PDT 2016
+changes:
+- Fix Meta version
+---
+version: 0.0.4
+date:    Wed Apr 13 14:13:53 PDT 2016
+changes:
+- Generate proper package.json
+---
+version: 0.0.3
+date:    Wed Apr 13 09:51:34 PDT 2016
+changes:
+- Packaging fixes
+---
 version: 0.0.2
 date:    Wed Apr 13 09:41:34 PDT 2016
 changes:
