@@ -40,6 +40,16 @@ class global.YamlCompiler
     node = yaml.load @read_file input_file
     @compile_node node
 
+  compile_files: (files)->
+    node = {}
+    for file in files
+      object = @compile_file file
+      if ! o.isObject(object) or o.isArray(object)
+        throw "'#{file}' is not a mapping"
+      for key, value of object
+        node[key] = value
+    node
+
   compile_node: (node)->
     if o.isArray node
       @compile_sequence node
@@ -50,22 +60,21 @@ class global.YamlCompiler
 
   compile_mapping: (input)->
     node = {}
-
     if input['<']?
       file = input['<']
       delete input['<']
-      node = @compile_file file
-
+      if o.isArray file
+        node = @compile_files file
+      else
+        node = @compile_file file
     for key, value of input
       node[key] = @compile_node value
-
     node
 
   compile_sequence: (input)->
     node = []
     for value in input
       node.push @compile_node value
-
     node
 
   compile_scalar: (input)->

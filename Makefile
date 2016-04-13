@@ -42,10 +42,6 @@ testXXX:
 test:
 	./test/test.coffee
 
-# install: distdir
-# 	(cd $(DISTDIR); npm install -g .)
-# 	make clean
-
 install: npm
 	(cd npm; npm install -g .)
 	rm -fr npm
@@ -58,7 +54,6 @@ npm:
 
 dist: clean npm
 	npm install .
-	(cd npm; dzil build)
 	mv npm/$(DIST) .
 	rm -fr npm
 
