@@ -1,7 +1,7 @@
 =meta: 0.0.2
 
 name: yaml-compiler
-version: 0.0.3
+version: 0.0.5
 abstract: Compile Multiple YAML Files into One
 homepage: http://yaml.org
 tag: [yaml, compiler]
