@@ -1,0 +1,8 @@
+foo:
+  foo: Hello
+  bar: 56
+  baz: OK
+bar:
+  foo: Hello
+  bar: 42
+  baz: OK
