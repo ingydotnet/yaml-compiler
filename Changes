@@ -1,4 +1,9 @@
 ---
+version: 0.0.2
+date:    Wed Apr 13 09:41:34 PDT 2016
+changes:
+- Packaging fixes
+---
 version: 0.0.1
 date:    Tue Apr 12 10:34:12 PDT 2016
 changes:
